@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>column css grid</title>
+  </head>
+  <body>
+    <style media="screen">
+      *{
+        margin: 0;
+        padding: 0;
+        text-align: center;
+
+        }
+      .grid{
+        display: grid;
+        /*grid-template-columns:33.3% 33.3% 33.3%;*/
+        grid-template-columns: 5fr 1fr 1fr;
+        /*grid-template-columns: repeat(3, 1fr);*/
+      }
+      .grid div{
+        background: grey;
+        height: 100px;
+      }
+      .grid div:nth-child(even){
+        background: lightblue;
+      }
+    </style>
+
+  </body>
+    <div class="grid">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+    </div>
+</html>
